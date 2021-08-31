@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>mInstagram</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+    <script type="module">
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCIb-V3-fnyjk5qycz1xmCZ6T3gC82vJSY",
+            authDomain: "fruit-catcher-b9ed4.firebaseapp.com",
+            databaseURL: "https://fruit-catcher-b9ed4-default-rtdb.firebaseio.com",
+            projectId: "fruit-catcher-b9ed4",
+            storageBucket: "fruit-catcher-b9ed4.appspot.com",
+            messagingSenderId: "925131992131",
+            appId: "1:925131992131:web:b881925aa4f0730942f8f6"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig)
+    </script>
+
+    
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="center">
+        <img src="mInstagram.png" alt="mInstagram" class="logo" width="250" height="70">
+        <h1 id="text"></h1>
+
+        <!-- <h1>Login</h1>  -->
+        <form method="post" id="login">
+            <div class="txt_field">
+                <input type="text" id="uName" required>
+                <span>
+                </span>
+                <label> Username
+                </label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pass" required>
+                <span>
+                </span>
+                <label> Password
+                </label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
